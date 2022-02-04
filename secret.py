@@ -14,3 +14,13 @@ my_list = list('ABCDEFGHIJK')
 a = secrets.choice(my_list)
 print(a)
 
+## Create strong password using secrets module
+array = list('0123456789')
+password = ''
+
+for i in range(10):
+    x = secrets.choice(array)
+    password += x
+
+print(password)
+
